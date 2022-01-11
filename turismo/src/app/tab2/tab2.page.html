@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Praias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src = "https://i2.wp.com/blogdestinoes.com.br/wp-content/uploads/2017/05/DSC_8582.jpg?fit=1920%2C1281&ssl=1">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Praia dos Padres</h2>
+          </ion-text>
+          <p>Guarapari</p>
+         </ion-label>
+         <ion-note slot="end">Sul</ion-note>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="openSite('https://www.tripadvisor.com.br/Attraction_Review-g941641-d2408025-Reviews-Praia_dos_Padres-Guarapari_State_of_Espirito_Santo.html')" color="danger">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+        <ion-item-option (click)="like()">
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  
+  </ion-list>
+</ion-content>
